@@ -28,11 +28,15 @@ void AccountHandler::MakeAccount()
 	cout << "1. 보통예금계좌 2.신용예금계좌" << endl;
 	cout << "선택 : ";
 	cin >> sel;
+	cout << endl;
 
 	if (sel == NORMAL)
 		MakeNormalAccount();
-	else
+	else if(sel == CREDIT)
 		MakeCreditAccount();
+	else
+		cout << "잘못된 입력입니다" << endl << endl;
+
 }
 
 void AccountHandler::MakeNormalAccount()
@@ -44,14 +48,22 @@ void AccountHandler::MakeNormalAccount()
 	
 	cout << "계좌 ID : ";
 	cin >> id;
-	
+	for (int i = 0; i < AccNum; i++)
+	{
+		if (id == accArr[i]->GetAccID())
+		{
+			cout << "해당 ID가 이미 존재합니다" << endl << endl;
+			return;
+		}
+	}
+
 	cout << "이름 : ";
 	cin >> name;
 
 	cout << "입금액 : ";
 	cin >> bal;
 
-	cout << "이자율 : ";
+	cout << "이자율(%) : ";
 	cin >> interRate;
 	cout << endl;
 	accArr[AccNum++] = new NormalAccount(id, bal, name, interRate);
@@ -66,6 +78,14 @@ void AccountHandler::MakeCreditAccount()
 
 	cout << "계좌 ID : ";
 	cin >> id;
+	for (int i = 0; i < AccNum; i++)
+	{
+		if (id == accArr[i]->GetAccID())
+		{
+			cout << "해당 ID가 이미 존재합니다" << endl << endl;
+			return;
+		}
+	}
 
 	cout << "이름 : ";
 	cin >> name;
@@ -73,7 +93,7 @@ void AccountHandler::MakeCreditAccount()
 	cout << "입금액 : ";
 	cin >> bal;
 
-	cout << "이자율 : ";
+	cout << "이자율(%) : ";
 	cin >> interRate;
 
 	cout << "신용등급 (1toA, 2toB, 3toC) : ";
@@ -120,7 +140,7 @@ void AccountHandler::DepositMoney()
 					return;
 				}
 			}
-			cout << "유효하지 않은 ID" << endl << endl;
+			cout << "유효하지 않은 ID" << endl;
 			return;
 		}
 		catch (MinusException& expt)
@@ -163,7 +183,7 @@ void AccountHandler::WitharwMoney()
 				}
 			}
 
-			cout << "유효하지 않은 ID" << endl << endl;
+			cout << "유효하지 않은 ID" << endl;
 			return;
 		}
 		catch (MinusException& expt)
@@ -181,6 +201,7 @@ void AccountHandler::WitharwMoney()
 
 void AccountHandler::ShowAllInfo() const
 {
+	cout << "[계좌정보 출력]" << endl;
 	for (int i = 0; i < AccNum; i++)
 	{
 		accArr[i]->ShowAccInfo();

@@ -33,6 +33,7 @@ int main()
 			cout << "올바르지 않은 입력입니다" << endl;
 			break;
 		}
+		cout << endl;
 	}
 
 	return 0;
