@@ -1,6 +1,11 @@
+/**
+*@file HighCredeitAccount.h
+*신용도 높은 고객 전용 계좌
+*/
 #pragma once
 #include "NormalAccount.h"
 
+///@brief 신용계좌 클래스
 class HighCreditAccount : public NormalAccount
 {
 private:

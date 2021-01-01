@@ -1,3 +1,7 @@
+/**
+*@mainpage
+*@brief 메인페이지
+*/
 #include "BankingCommonDecl.h"
 #include "AccountHandler.h"
 

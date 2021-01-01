@@ -1,7 +1,12 @@
+/*
+*@file NormalAccount
+*기본계좌 생성
+*/
 #pragma once
 #include "Account.h"
 #include "AccountException.h"
 
+///@brief 기본계좌 생성 클래스
 class NormalAccount : public Account
 {
 private:

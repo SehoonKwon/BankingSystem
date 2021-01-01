@@ -1,3 +1,7 @@
+/**
+*@file BankingCommenDecl.h
+*전역에 쓸 enum 및 사용자정의 정리
+*/
 #pragma once
 #include <iostream>
 #include <string>

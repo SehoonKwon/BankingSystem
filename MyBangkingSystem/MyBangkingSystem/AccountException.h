@@ -1,6 +1,11 @@
+/**
+*@file AccountException.h
+*抗寇贸府 包府
+*/
 #pragma once
 #include "BankingCommonDecl.h"
 
+///@brief 抗寇贸府 包府 努贰胶
 class MinusException
 {
 private:
