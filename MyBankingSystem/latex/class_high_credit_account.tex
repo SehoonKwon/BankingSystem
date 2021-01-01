@@ -1,0 +1,262 @@
+\hypertarget{class_high_credit_account}{}\doxysection{High\+Credit\+Account 클래스 참조}
+\label{class_high_credit_account}\index{HighCreditAccount@{HighCreditAccount}}
+
+
+신용계좌 클래스  
+
+
+
+
+{\ttfamily \#include $<$High\+Credit\+Account.\+h$>$}
+
+
+
+High\+Credit\+Account에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_high_credit_account__inherit__graph}
+\end{center}
+\end{figure}
+
+
+High\+Credit\+Account에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_high_credit_account__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_high_credit_account_a2022e5a6ae9b48ad442acfc7f108e443}{High\+Credit\+Account}} (int id, int money, string name, int rate, int special)
+\item 
+virtual \mbox{\hyperlink{class_high_credit_account_a8a2f47d868534d79ab8b30de7b31f7b5}{$\sim$\+High\+Credit\+Account}} ()
+\item 
+virtual void \mbox{\hyperlink{class_high_credit_account_afe3dd8646135f8e3f70376fa3781e838}{Deposit}} (int money)
+\begin{DoxyCompactList}\small\item\em 계좌정보 출력 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_account_ad5589a594b47d1df8f629cf69c03ea8f}{Get\+Acc\+ID}} () const
+\item 
+void \mbox{\hyperlink{class_account_a2e9cf4b183f375cd2f1751a7b20f73cc}{Show\+Acc\+Info}} () const
+\begin{DoxyCompactList}\small\item\em 계좌 ID 확인 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_account_a248afcdf7e3c49b79a940ba776f94389}{Witdraw}} (int money)
+\begin{DoxyCompactList}\small\item\em 입금 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_high_credit_account_ab979a6cdcab9ad34d1de2ab50a0321d9}{special\+Rate}}
+\item 
+int \mbox{\hyperlink{class_normal_account_ad6193845099e53698a252e94f2b4c4e4}{inter\+Rate}}
+\item 
+int \mbox{\hyperlink{class_account_a4e0e03d3ec046c3cfaeeeaa5ff69351b}{acc\+ID}}
+\item 
+int \mbox{\hyperlink{class_account_a6012cadbf02a6fd4c3f566a8b7ab9105}{balance}}
+\item 
+string \mbox{\hyperlink{class_account_ad5752e34d4ea770c91b0d2c5786f5b4c}{cus\+\_\+name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+신용계좌 클래스 
+
+High\+Credit\+Account.\+h 파일의 9 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_high_credit_account_a2022e5a6ae9b48ad442acfc7f108e443}\label{class_high_credit_account_a2022e5a6ae9b48ad442acfc7f108e443}} 
+\index{HighCreditAccount@{HighCreditAccount}!HighCreditAccount@{HighCreditAccount}}
+\index{HighCreditAccount@{HighCreditAccount}!HighCreditAccount@{HighCreditAccount}}
+\doxysubsubsection{\texorpdfstring{HighCreditAccount()}{HighCreditAccount()}}
+{\footnotesize\ttfamily High\+Credit\+Account\+::\+High\+Credit\+Account (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{money,  }\item[{string}]{name,  }\item[{int}]{rate,  }\item[{int}]{special }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+High\+Credit\+Account.\+h 파일의 15 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15 : \mbox{\hyperlink{class_normal_account_a58aaf2898b6e20f285f3b39e93771f94}{NormalAccount}}(\textcolor{keywordtype}{id}, money, name, rate), \mbox{\hyperlink{class_high_credit_account_ab979a6cdcab9ad34d1de2ab50a0321d9}{specialRate}}(special) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_high_credit_account_a8a2f47d868534d79ab8b30de7b31f7b5}\label{class_high_credit_account_a8a2f47d868534d79ab8b30de7b31f7b5}} 
+\index{HighCreditAccount@{HighCreditAccount}!````~HighCreditAccount@{$\sim$HighCreditAccount}}
+\index{````~HighCreditAccount@{$\sim$HighCreditAccount}!HighCreditAccount@{HighCreditAccount}}
+\doxysubsubsection{\texorpdfstring{$\sim$HighCreditAccount()}{~HighCreditAccount()}}
+{\footnotesize\ttfamily virtual High\+Credit\+Account\+::$\sim$\+High\+Credit\+Account (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+High\+Credit\+Account.\+h 파일의 16 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_high_credit_account_afe3dd8646135f8e3f70376fa3781e838}\label{class_high_credit_account_afe3dd8646135f8e3f70376fa3781e838}} 
+\index{HighCreditAccount@{HighCreditAccount}!Deposit@{Deposit}}
+\index{Deposit@{Deposit}!HighCreditAccount@{HighCreditAccount}}
+\doxysubsubsection{\texorpdfstring{Deposit()}{Deposit()}}
+{\footnotesize\ttfamily virtual void High\+Credit\+Account\+::\+Deposit (\begin{DoxyParamCaption}\item[{int}]{money }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+계좌정보 출력 
+
+
+
+\mbox{\hyperlink{class_normal_account_ade057e30449163a6b0246ae893523aac}{Normal\+Account}}(으)로부터 재구현되었습니다.
+
+
+
+High\+Credit\+Account.\+h 파일의 17 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18     \{}
+\DoxyCodeLine{19         \textcolor{keywordflow}{if} (money < 0)}
+\DoxyCodeLine{20             \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_minus_exception}{MinusException}}(money);}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22         \mbox{\hyperlink{class_normal_account_ade057e30449163a6b0246ae893523aac}{NormalAccount::Deposit}}(money);}
+\DoxyCodeLine{23         \mbox{\hyperlink{class_account_aeb01e9477a2dc4d4c2abdf032b478348}{Account::Deposit}}(money*(\mbox{\hyperlink{class_high_credit_account_ab979a6cdcab9ad34d1de2ab50a0321d9}{specialRate}} / 100.0));}
+\DoxyCodeLine{24     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_high_credit_account_afe3dd8646135f8e3f70376fa3781e838_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_account_ad5589a594b47d1df8f629cf69c03ea8f}\label{class_account_ad5589a594b47d1df8f629cf69c03ea8f}} 
+\index{HighCreditAccount@{HighCreditAccount}!GetAccID@{GetAccID}}
+\index{GetAccID@{GetAccID}!HighCreditAccount@{HighCreditAccount}}
+\doxysubsubsection{\texorpdfstring{GetAccID()}{GetAccID()}}
+{\footnotesize\ttfamily int Account\+::\+Get\+Acc\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Account.\+cpp 파일의 10 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_account_a4e0e03d3ec046c3cfaeeeaa5ff69351b}{accID}};}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_account_a2e9cf4b183f375cd2f1751a7b20f73cc}\label{class_account_a2e9cf4b183f375cd2f1751a7b20f73cc}} 
+\index{HighCreditAccount@{HighCreditAccount}!ShowAccInfo@{ShowAccInfo}}
+\index{ShowAccInfo@{ShowAccInfo}!HighCreditAccount@{HighCreditAccount}}
+\doxysubsubsection{\texorpdfstring{ShowAccInfo()}{ShowAccInfo()}}
+{\footnotesize\ttfamily void Account\+::\+Show\+Acc\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+계좌 ID 확인 
+
+
+
+Account.\+cpp 파일의 15 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17     cout << \textcolor{stringliteral}{"{}계좌ID : "{}} << \mbox{\hyperlink{class_account_a4e0e03d3ec046c3cfaeeeaa5ff69351b}{accID}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{18     cout << \textcolor{stringliteral}{"{}이름 : "{}} << \mbox{\hyperlink{class_account_ad5752e34d4ea770c91b0d2c5786f5b4c}{cus\_name}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{19     cout << \textcolor{stringliteral}{"{}잔액 : "{}} << \mbox{\hyperlink{class_account_a6012cadbf02a6fd4c3f566a8b7ab9105}{balance}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{20 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_account_a248afcdf7e3c49b79a940ba776f94389}\label{class_account_a248afcdf7e3c49b79a940ba776f94389}} 
+\index{HighCreditAccount@{HighCreditAccount}!Witdraw@{Witdraw}}
+\index{Witdraw@{Witdraw}!HighCreditAccount@{HighCreditAccount}}
+\doxysubsubsection{\texorpdfstring{Witdraw()}{Witdraw()}}
+{\footnotesize\ttfamily int Account\+::\+Witdraw (\begin{DoxyParamCaption}\item[{int}]{money }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+입금 
+
+
+
+Account.\+cpp 파일의 30 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31 \{}
+\DoxyCodeLine{32     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_account_a6012cadbf02a6fd4c3f566a8b7ab9105}{balance}} < money)}
+\DoxyCodeLine{33         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_insuff_exception}{InsuffException}}(\mbox{\hyperlink{class_account_a6012cadbf02a6fd4c3f566a8b7ab9105}{balance}}, money);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \mbox{\hyperlink{class_account_a6012cadbf02a6fd4c3f566a8b7ab9105}{balance}} -\/= money;}
+\DoxyCodeLine{36     \textcolor{keywordflow}{return} money;}
+\DoxyCodeLine{37 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_account_a4e0e03d3ec046c3cfaeeeaa5ff69351b}\label{class_account_a4e0e03d3ec046c3cfaeeeaa5ff69351b}} 
+\index{HighCreditAccount@{HighCreditAccount}!accID@{accID}}
+\index{accID@{accID}!HighCreditAccount@{HighCreditAccount}}
+\doxysubsubsection{\texorpdfstring{accID}{accID}}
+{\footnotesize\ttfamily int Account\+::acc\+ID\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+Account.\+h 파일의 12 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_account_a6012cadbf02a6fd4c3f566a8b7ab9105}\label{class_account_a6012cadbf02a6fd4c3f566a8b7ab9105}} 
+\index{HighCreditAccount@{HighCreditAccount}!balance@{balance}}
+\index{balance@{balance}!HighCreditAccount@{HighCreditAccount}}
+\doxysubsubsection{\texorpdfstring{balance}{balance}}
+{\footnotesize\ttfamily int Account\+::balance\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+Account.\+h 파일의 13 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_account_ad5752e34d4ea770c91b0d2c5786f5b4c}\label{class_account_ad5752e34d4ea770c91b0d2c5786f5b4c}} 
+\index{HighCreditAccount@{HighCreditAccount}!cus\_name@{cus\_name}}
+\index{cus\_name@{cus\_name}!HighCreditAccount@{HighCreditAccount}}
+\doxysubsubsection{\texorpdfstring{cus\_name}{cus\_name}}
+{\footnotesize\ttfamily string Account\+::cus\+\_\+name\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+Account.\+h 파일의 14 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_normal_account_ad6193845099e53698a252e94f2b4c4e4}\label{class_normal_account_ad6193845099e53698a252e94f2b4c4e4}} 
+\index{HighCreditAccount@{HighCreditAccount}!interRate@{interRate}}
+\index{interRate@{interRate}!HighCreditAccount@{HighCreditAccount}}
+\doxysubsubsection{\texorpdfstring{interRate}{interRate}}
+{\footnotesize\ttfamily int Normal\+Account\+::inter\+Rate\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+Normal\+Account.\+h 파일의 13 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_high_credit_account_ab979a6cdcab9ad34d1de2ab50a0321d9}\label{class_high_credit_account_ab979a6cdcab9ad34d1de2ab50a0321d9}} 
+\index{HighCreditAccount@{HighCreditAccount}!specialRate@{specialRate}}
+\index{specialRate@{specialRate}!HighCreditAccount@{HighCreditAccount}}
+\doxysubsubsection{\texorpdfstring{specialRate}{specialRate}}
+{\footnotesize\ttfamily int High\+Credit\+Account\+::special\+Rate\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+High\+Credit\+Account.\+h 파일의 12 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+My\+Bangking\+System/\mbox{\hyperlink{_high_credit_account_8h}{High\+Credit\+Account.\+h}}\end{DoxyCompactItemize}

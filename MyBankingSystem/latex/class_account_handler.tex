@@ -1,0 +1,477 @@
+\hypertarget{class_account_handler}{}\doxysection{Account\+Handler 클래스 참조}
+\label{class_account_handler}\index{AccountHandler@{AccountHandler}}
+
+
+인터페이스 조작용 클래스  
+
+
+
+
+{\ttfamily \#include $<$Account\+Handler.\+h$>$}
+
+
+
+Account\+Handler에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_account_handler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_account_handler_a72b085e0a797c9ddc82f1452e2b97914}{Account\+Handler}} ()
+\item 
+void \mbox{\hyperlink{class_account_handler_a2b62b0737cf5f63c4a875534012152e5}{Show\+Menu}} () const
+\item 
+void \mbox{\hyperlink{class_account_handler_a8d52fd7d9d898db9da9fceec89f08e94}{Make\+Account}} ()
+\item 
+void \mbox{\hyperlink{class_account_handler_a6e26960a031ab5177673975482c15165}{Deposit\+Money}} ()
+\item 
+void \mbox{\hyperlink{class_account_handler_aad473ca825b506a1c2a5e6f2f89098d7}{Witharw\+Money}} ()
+\item 
+void \mbox{\hyperlink{class_account_handler_a1b3cd6b653ffc8f55df236a0f4878282}{Show\+All\+Info}} () const
+\item 
+void \mbox{\hyperlink{class_account_handler_a1126f771f11321902a04f5ac82fa7834}{Make\+Normal\+Account}} ()
+\item 
+void \mbox{\hyperlink{class_account_handler_ad4384a864bfdb13eb413bf6982c07273}{Make\+Credit\+Account}} ()
+\item 
+\mbox{\hyperlink{class_account_handler_add5dd0640fab0c91dea318604a175855}{$\sim$\+Account\+Handler}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}}$<$ \mbox{\hyperlink{class_account}{Account}} $\ast$ $>$ \mbox{\hyperlink{class_account_handler_a4df6cbdceda310421049ea30c21a2cfe}{acc\+Arr}}
+\item 
+int \mbox{\hyperlink{class_account_handler_af2aa0b788eeec9c03b0981089ada551b}{Acc\+Num}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+인터페이스 조작용 클래스 
+
+Account\+Handler.\+h 파일의 10 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_account_handler_a72b085e0a797c9ddc82f1452e2b97914}\label{class_account_handler_a72b085e0a797c9ddc82f1452e2b97914}} 
+\index{AccountHandler@{AccountHandler}!AccountHandler@{AccountHandler}}
+\index{AccountHandler@{AccountHandler}!AccountHandler@{AccountHandler}}
+\doxysubsubsection{\texorpdfstring{AccountHandler()}{AccountHandler()}}
+{\footnotesize\ttfamily Account\+Handler\+::\+Account\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Account\+Handler.\+cpp 파일의 6 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6 : \mbox{\hyperlink{class_account_handler_af2aa0b788eeec9c03b0981089ada551b}{AccNum}}(0) \{\};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_account_handler_add5dd0640fab0c91dea318604a175855}\label{class_account_handler_add5dd0640fab0c91dea318604a175855}} 
+\index{AccountHandler@{AccountHandler}!````~AccountHandler@{$\sim$AccountHandler}}
+\index{````~AccountHandler@{$\sim$AccountHandler}!AccountHandler@{AccountHandler}}
+\doxysubsubsection{\texorpdfstring{$\sim$AccountHandler()}{~AccountHandler()}}
+{\footnotesize\ttfamily Account\+Handler\+::$\sim$\+Account\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Account\+Handler.\+cpp 파일의 7 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_account_handler_af2aa0b788eeec9c03b0981089ada551b}{AccNum}}; i++)}
+\DoxyCodeLine{10         \textcolor{keyword}{delete} \mbox{\hyperlink{class_account_handler_a4df6cbdceda310421049ea30c21a2cfe}{accArr}}[i];}
+\DoxyCodeLine{11 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_account_handler_a6e26960a031ab5177673975482c15165}\label{class_account_handler_a6e26960a031ab5177673975482c15165}} 
+\index{AccountHandler@{AccountHandler}!DepositMoney@{DepositMoney}}
+\index{DepositMoney@{DepositMoney}!AccountHandler@{AccountHandler}}
+\doxysubsubsection{\texorpdfstring{DepositMoney()}{DepositMoney()}}
+{\footnotesize\ttfamily void Account\+Handler\+::\+Deposit\+Money (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Account\+Handler.\+cpp 파일의 117 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118 \{}
+\DoxyCodeLine{119     \textcolor{keywordtype}{int} money;}
+\DoxyCodeLine{120     \textcolor{keywordtype}{int} id;}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122     cout << \textcolor{stringliteral}{"{}[입금]"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{123     cout << \textcolor{stringliteral}{"{}계좌ID : "{}};}
+\DoxyCodeLine{124     cin >> id;}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126     cout << \textcolor{stringliteral}{"{}입금액 : "{}};}
+\DoxyCodeLine{127     cin >> money;}
+\DoxyCodeLine{128     cout << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130     \textcolor{keywordflow}{while} (1)}
+\DoxyCodeLine{131     \{}
+\DoxyCodeLine{132         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{133         \{}
+\DoxyCodeLine{134             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_account_handler_af2aa0b788eeec9c03b0981089ada551b}{AccNum}}; i++)}
+\DoxyCodeLine{135             \{}
+\DoxyCodeLine{136                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_account_handler_a4df6cbdceda310421049ea30c21a2cfe}{accArr}}[i]-\/>GetAccID() == \textcolor{keywordtype}{id})}
+\DoxyCodeLine{137                 \{}
+\DoxyCodeLine{138                     \mbox{\hyperlink{class_account_handler_a4df6cbdceda310421049ea30c21a2cfe}{accArr}}[i]-\/>Deposit(money);}
+\DoxyCodeLine{139                     cout << \textcolor{stringliteral}{"{}입금완료"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{140                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{141                 \}}
+\DoxyCodeLine{142             \}}
+\DoxyCodeLine{143             cout << \textcolor{stringliteral}{"{}유효하지 않은 ID"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{144             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{145         \}}
+\DoxyCodeLine{146         \textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_minus_exception}{MinusException}}\& expt)}
+\DoxyCodeLine{147         \{}
+\DoxyCodeLine{148             expt.\mbox{\hyperlink{class_minus_exception_a1725d869e54cc51f624495780c428f52}{ShowExceptionInfo}}();}
+\DoxyCodeLine{149             cout << \textcolor{stringliteral}{"{}입금액만 재입력하세요"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{150         \}}
+\DoxyCodeLine{151     \}}
+\DoxyCodeLine{152 \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_account_handler_a6e26960a031ab5177673975482c15165_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{class_account_handler_a6e26960a031ab5177673975482c15165_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_account_handler_a8d52fd7d9d898db9da9fceec89f08e94}\label{class_account_handler_a8d52fd7d9d898db9da9fceec89f08e94}} 
+\index{AccountHandler@{AccountHandler}!MakeAccount@{MakeAccount}}
+\index{MakeAccount@{MakeAccount}!AccountHandler@{AccountHandler}}
+\doxysubsubsection{\texorpdfstring{MakeAccount()}{MakeAccount()}}
+{\footnotesize\ttfamily void Account\+Handler\+::\+Make\+Account (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Account\+Handler.\+cpp 파일의 23 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25     \textcolor{keywordtype}{int} sel;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     cout << \textcolor{stringliteral}{"{}[계좌종류 선택]"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{28     cout << \textcolor{stringliteral}{"{}1. 보통예금계좌 2.신용예금계좌"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{29     cout << \textcolor{stringliteral}{"{}선택 : "{}};}
+\DoxyCodeLine{30     cin >> sel;}
+\DoxyCodeLine{31     cout << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keywordflow}{if} (sel == \mbox{\hyperlink{_banking_common_decl_8h_a99fb83031ce9923c84392b4e92f956b5a50d1448013c6f17125caee18aa418af7}{NORMAL}})}
+\DoxyCodeLine{34         \mbox{\hyperlink{class_account_handler_a1126f771f11321902a04f5ac82fa7834}{MakeNormalAccount}}();}
+\DoxyCodeLine{35     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(sel == \mbox{\hyperlink{_banking_common_decl_8h_a99fb83031ce9923c84392b4e92f956b5a5b9c7596aea45aa4b6b3fc93a907391d}{CREDIT}})}
+\DoxyCodeLine{36         \mbox{\hyperlink{class_account_handler_ad4384a864bfdb13eb413bf6982c07273}{MakeCreditAccount}}();}
+\DoxyCodeLine{37     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{38         cout << \textcolor{stringliteral}{"{}잘못된 입력입니다"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_account_handler_a8d52fd7d9d898db9da9fceec89f08e94_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_account_handler_a8d52fd7d9d898db9da9fceec89f08e94_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_account_handler_ad4384a864bfdb13eb413bf6982c07273}\label{class_account_handler_ad4384a864bfdb13eb413bf6982c07273}} 
+\index{AccountHandler@{AccountHandler}!MakeCreditAccount@{MakeCreditAccount}}
+\index{MakeCreditAccount@{MakeCreditAccount}!AccountHandler@{AccountHandler}}
+\doxysubsubsection{\texorpdfstring{MakeCreditAccount()}{MakeCreditAccount()}}
+{\footnotesize\ttfamily void Account\+Handler\+::\+Make\+Credit\+Account (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Account\+Handler.\+cpp 파일의 72 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73 \{}
+\DoxyCodeLine{74     \textcolor{keywordtype}{int} id, bal, interRate, creditLevel;}
+\DoxyCodeLine{75     \textcolor{keywordtype}{string} name;}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77     cout << \textcolor{stringliteral}{"{}[신용계좌 개설]"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     cout << \textcolor{stringliteral}{"{}계좌 ID : "{}};}
+\DoxyCodeLine{80     cin >> id;}
+\DoxyCodeLine{81     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_account_handler_af2aa0b788eeec9c03b0981089ada551b}{AccNum}}; i++)}
+\DoxyCodeLine{82     \{}
+\DoxyCodeLine{83         \textcolor{keywordflow}{if} (\textcolor{keywordtype}{id} == \mbox{\hyperlink{class_account_handler_a4df6cbdceda310421049ea30c21a2cfe}{accArr}}[i]-\/>GetAccID())}
+\DoxyCodeLine{84         \{}
+\DoxyCodeLine{85             cout << \textcolor{stringliteral}{"{}해당 ID가 이미 존재합니다"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{86             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{87         \}}
+\DoxyCodeLine{88     \}}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90     cout << \textcolor{stringliteral}{"{}이름 : "{}};}
+\DoxyCodeLine{91     cin >> name;}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93     cout << \textcolor{stringliteral}{"{}입금액 : "{}};}
+\DoxyCodeLine{94     cin >> bal;}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96     cout << \textcolor{stringliteral}{"{}이자율(\%) : "{}};}
+\DoxyCodeLine{97     cin >> interRate;}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99     cout << \textcolor{stringliteral}{"{}신용등급 (1toA, 2toB, 3toC) : "{}};}
+\DoxyCodeLine{100     cin >> creditLevel;}
+\DoxyCodeLine{101     cout << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103     \textcolor{keywordflow}{switch} (creditLevel)}
+\DoxyCodeLine{104     \{}
+\DoxyCodeLine{105     \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{106         \mbox{\hyperlink{class_account_handler_a4df6cbdceda310421049ea30c21a2cfe}{accArr}}[\mbox{\hyperlink{class_account_handler_af2aa0b788eeec9c03b0981089ada551b}{AccNum}}++] = \textcolor{keyword}{new} \mbox{\hyperlink{class_high_credit_account}{HighCreditAccount}}(\textcolor{keywordtype}{id}, bal, name, interRate, \mbox{\hyperlink{_banking_common_decl_8h_adf764cbdea00d65edcd07bb9953ad2b7a901c60517bd59f3c9d8f3c2e3f0da76b}{LEVEL\_A}});}
+\DoxyCodeLine{107         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{108     \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{109         \mbox{\hyperlink{class_account_handler_a4df6cbdceda310421049ea30c21a2cfe}{accArr}}[\mbox{\hyperlink{class_account_handler_af2aa0b788eeec9c03b0981089ada551b}{AccNum}}++] = \textcolor{keyword}{new} \mbox{\hyperlink{class_high_credit_account}{HighCreditAccount}}(\textcolor{keywordtype}{id}, bal, name, interRate, \mbox{\hyperlink{_banking_common_decl_8h_adf764cbdea00d65edcd07bb9953ad2b7a7fbd58c6849e0860071086a8a63be6b7}{LEVEL\_B}});}
+\DoxyCodeLine{110         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{111     \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{112         \mbox{\hyperlink{class_account_handler_a4df6cbdceda310421049ea30c21a2cfe}{accArr}}[\mbox{\hyperlink{class_account_handler_af2aa0b788eeec9c03b0981089ada551b}{AccNum}}++] = \textcolor{keyword}{new} \mbox{\hyperlink{class_high_credit_account}{HighCreditAccount}}(\textcolor{keywordtype}{id}, bal, name, interRate, \mbox{\hyperlink{_banking_common_decl_8h_adf764cbdea00d65edcd07bb9953ad2b7af1f9042e05fed297d81c4d9e07b11e8f}{LEVEL\_C}});}
+\DoxyCodeLine{113         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{114     \}}
+\DoxyCodeLine{115 \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_account_handler_ad4384a864bfdb13eb413bf6982c07273_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_account_handler_a1126f771f11321902a04f5ac82fa7834}\label{class_account_handler_a1126f771f11321902a04f5ac82fa7834}} 
+\index{AccountHandler@{AccountHandler}!MakeNormalAccount@{MakeNormalAccount}}
+\index{MakeNormalAccount@{MakeNormalAccount}!AccountHandler@{AccountHandler}}
+\doxysubsubsection{\texorpdfstring{MakeNormalAccount()}{MakeNormalAccount()}}
+{\footnotesize\ttfamily void Account\+Handler\+::\+Make\+Normal\+Account (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Account\+Handler.\+cpp 파일의 42 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43 \{}
+\DoxyCodeLine{44     \textcolor{keywordtype}{int} id, bal, interRate;}
+\DoxyCodeLine{45     \textcolor{keywordtype}{string} name;}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     cout << \textcolor{stringliteral}{"{}[보통예금계좌 개설]"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{48     }
+\DoxyCodeLine{49     cout << \textcolor{stringliteral}{"{}계좌 ID : "{}};}
+\DoxyCodeLine{50     cin >> id;}
+\DoxyCodeLine{51     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_account_handler_af2aa0b788eeec9c03b0981089ada551b}{AccNum}}; i++)}
+\DoxyCodeLine{52     \{}
+\DoxyCodeLine{53         \textcolor{keywordflow}{if} (\textcolor{keywordtype}{id} == \mbox{\hyperlink{class_account_handler_a4df6cbdceda310421049ea30c21a2cfe}{accArr}}[i]-\/>GetAccID())}
+\DoxyCodeLine{54         \{}
+\DoxyCodeLine{55             cout << \textcolor{stringliteral}{"{}해당 ID가 이미 존재합니다"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{56             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{57         \}}
+\DoxyCodeLine{58     \}}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60     cout << \textcolor{stringliteral}{"{}이름 : "{}};}
+\DoxyCodeLine{61     cin >> name;}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63     cout << \textcolor{stringliteral}{"{}입금액 : "{}};}
+\DoxyCodeLine{64     cin >> bal;}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66     cout << \textcolor{stringliteral}{"{}이자율(\%) : "{}};}
+\DoxyCodeLine{67     cin >> interRate;}
+\DoxyCodeLine{68     cout << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{69     \mbox{\hyperlink{class_account_handler_a4df6cbdceda310421049ea30c21a2cfe}{accArr}}[\mbox{\hyperlink{class_account_handler_af2aa0b788eeec9c03b0981089ada551b}{AccNum}}++] = \textcolor{keyword}{new} \mbox{\hyperlink{class_normal_account}{NormalAccount}}(\textcolor{keywordtype}{id}, bal, name, interRate);}
+\DoxyCodeLine{70 \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_account_handler_a1126f771f11321902a04f5ac82fa7834_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_account_handler_a1b3cd6b653ffc8f55df236a0f4878282}\label{class_account_handler_a1b3cd6b653ffc8f55df236a0f4878282}} 
+\index{AccountHandler@{AccountHandler}!ShowAllInfo@{ShowAllInfo}}
+\index{ShowAllInfo@{ShowAllInfo}!AccountHandler@{AccountHandler}}
+\doxysubsubsection{\texorpdfstring{ShowAllInfo()}{ShowAllInfo()}}
+{\footnotesize\ttfamily void Account\+Handler\+::\+Show\+All\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Account\+Handler.\+cpp 파일의 202 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{203 \{}
+\DoxyCodeLine{204     cout << \textcolor{stringliteral}{"{}[계좌정보 출력]"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{205     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_account_handler_af2aa0b788eeec9c03b0981089ada551b}{AccNum}}; i++)}
+\DoxyCodeLine{206     \{}
+\DoxyCodeLine{207         \mbox{\hyperlink{class_account_handler_a4df6cbdceda310421049ea30c21a2cfe}{accArr}}[i]-\/>ShowAccInfo();}
+\DoxyCodeLine{208         cout << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{209     \}}
+\DoxyCodeLine{210 \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_account_handler_a1b3cd6b653ffc8f55df236a0f4878282_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_account_handler_a2b62b0737cf5f63c4a875534012152e5}\label{class_account_handler_a2b62b0737cf5f63c4a875534012152e5}} 
+\index{AccountHandler@{AccountHandler}!ShowMenu@{ShowMenu}}
+\index{ShowMenu@{ShowMenu}!AccountHandler@{AccountHandler}}
+\doxysubsubsection{\texorpdfstring{ShowMenu()}{ShowMenu()}}
+{\footnotesize\ttfamily void Account\+Handler\+::\+Show\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Account\+Handler.\+cpp 파일의 13 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15     cout << \textcolor{stringliteral}{"{}-\/-\/-\/Menu-\/-\/-\/"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{16     cout << \textcolor{stringliteral}{"{}1. 계좌개설"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{17     cout << \textcolor{stringliteral}{"{}2. 입금"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{18     cout << \textcolor{stringliteral}{"{}3. 출금"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{19     cout << \textcolor{stringliteral}{"{}4. 계좌정보 출력"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{20     cout << \textcolor{stringliteral}{"{}5. 종료"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_account_handler_a2b62b0737cf5f63c4a875534012152e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_account_handler_aad473ca825b506a1c2a5e6f2f89098d7}\label{class_account_handler_aad473ca825b506a1c2a5e6f2f89098d7}} 
+\index{AccountHandler@{AccountHandler}!WitharwMoney@{WitharwMoney}}
+\index{WitharwMoney@{WitharwMoney}!AccountHandler@{AccountHandler}}
+\doxysubsubsection{\texorpdfstring{WitharwMoney()}{WitharwMoney()}}
+{\footnotesize\ttfamily void Account\+Handler\+::\+Witharw\+Money (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Account\+Handler.\+cpp 파일의 154 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{155 \{}
+\DoxyCodeLine{156     \textcolor{keywordtype}{int} money;}
+\DoxyCodeLine{157     \textcolor{keywordtype}{int} id;}
+\DoxyCodeLine{158 }
+\DoxyCodeLine{159     cout << \textcolor{stringliteral}{"{}[출금]"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{160     cout << \textcolor{stringliteral}{"{}계좌ID : "{}};}
+\DoxyCodeLine{161     cin >> id;}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{163     cout << \textcolor{stringliteral}{"{}출금액 : "{}};}
+\DoxyCodeLine{164     cin >> money;}
+\DoxyCodeLine{165     cout << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{166 }
+\DoxyCodeLine{167     \textcolor{keywordflow}{while} (1)}
+\DoxyCodeLine{168     \{}
+\DoxyCodeLine{169         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{170         \{}
+\DoxyCodeLine{171             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_account_handler_af2aa0b788eeec9c03b0981089ada551b}{AccNum}}; i++)}
+\DoxyCodeLine{172             \{}
+\DoxyCodeLine{173                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_account_handler_a4df6cbdceda310421049ea30c21a2cfe}{accArr}}[i]-\/>GetAccID() == \textcolor{keywordtype}{id})}
+\DoxyCodeLine{174                 \{}
+\DoxyCodeLine{175                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_account_handler_a4df6cbdceda310421049ea30c21a2cfe}{accArr}}[i]-\/>Witdraw(money) == 0)}
+\DoxyCodeLine{176                     \{}
+\DoxyCodeLine{177                         cout << \textcolor{stringliteral}{"{}잔액부족"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{178                         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{179                     \}}
+\DoxyCodeLine{180 }
+\DoxyCodeLine{181                     cout << \textcolor{stringliteral}{"{}출금완료"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{182                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{183                 \}}
+\DoxyCodeLine{184             \}}
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186             cout << \textcolor{stringliteral}{"{}유효하지 않은 ID"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{187             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{188         \}}
+\DoxyCodeLine{189         \textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_minus_exception}{MinusException}}\& expt)}
+\DoxyCodeLine{190         \{}
+\DoxyCodeLine{191             expt.\mbox{\hyperlink{class_minus_exception_a1725d869e54cc51f624495780c428f52}{ShowExceptionInfo}}();}
+\DoxyCodeLine{192             cout << \textcolor{stringliteral}{"{}입금액만 재입력하세요"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{193         \}}
+\DoxyCodeLine{194         \textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_insuff_exception}{InsuffException}}\& expt)}
+\DoxyCodeLine{195         \{}
+\DoxyCodeLine{196             expt.\mbox{\hyperlink{class_insuff_exception_a7b54ff8c097bae8886dd6ccaa47bccf3}{ShowExceptionInfo}}();}
+\DoxyCodeLine{197             cout << \textcolor{stringliteral}{"{}출금액만 재입력하세요"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{198         \}}
+\DoxyCodeLine{199     \}}
+\DoxyCodeLine{200 \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_account_handler_aad473ca825b506a1c2a5e6f2f89098d7_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_account_handler_aad473ca825b506a1c2a5e6f2f89098d7_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_account_handler_a4df6cbdceda310421049ea30c21a2cfe}\label{class_account_handler_a4df6cbdceda310421049ea30c21a2cfe}} 
+\index{AccountHandler@{AccountHandler}!accArr@{accArr}}
+\index{accArr@{accArr}!AccountHandler@{AccountHandler}}
+\doxysubsubsection{\texorpdfstring{accArr}{accArr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}}$<$\mbox{\hyperlink{class_account}{Account}}$\ast$$>$ Account\+Handler\+::acc\+Arr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Account\+Handler.\+h 파일의 13 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_account_handler_af2aa0b788eeec9c03b0981089ada551b}\label{class_account_handler_af2aa0b788eeec9c03b0981089ada551b}} 
+\index{AccountHandler@{AccountHandler}!AccNum@{AccNum}}
+\index{AccNum@{AccNum}!AccountHandler@{AccountHandler}}
+\doxysubsubsection{\texorpdfstring{AccNum}{AccNum}}
+{\footnotesize\ttfamily int Account\+Handler\+::\+Acc\+Num\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Account\+Handler.\+h 파일의 14 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+My\+Bangking\+System/\mbox{\hyperlink{_account_handler_8h}{Account\+Handler.\+h}}\item 
+My\+Bangking\+System/\mbox{\hyperlink{_account_handler_8cpp}{Account\+Handler.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{_banking___main_8cpp}{}\doxysection{My\+Bangking\+System/\+Banking\+\_\+\+Main.cpp 파일 참조}
+\label{_banking___main_8cpp}\index{MyBangkingSystem/Banking\_Main.cpp@{MyBangkingSystem/Banking\_Main.cpp}}
+{\ttfamily \#include \char`\"{}Banking\+Common\+Decl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Account\+Handler.\+h\char`\"{}}\newline
+Banking\+\_\+\+Main.\+cpp에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_banking___main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_banking___main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{함수 문서화}
+\mbox{\Hypertarget{_banking___main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_banking___main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Banking\_Main.cpp@{Banking\_Main.cpp}!main@{main}}
+\index{main@{main}!Banking\_Main.cpp@{Banking\_Main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Banking\+\_\+\+Main.\+cpp 파일의 8 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_account_handler}{AccountHandler}} manager;}
+\DoxyCodeLine{11     \textcolor{keywordtype}{int} choice;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \textcolor{keywordflow}{while} (1)}
+\DoxyCodeLine{14     \{}
+\DoxyCodeLine{15         manager.\mbox{\hyperlink{class_account_handler_a2b62b0737cf5f63c4a875534012152e5}{ShowMenu}}();}
+\DoxyCodeLine{16         cout << \textcolor{stringliteral}{"{}선택 : "{}};}
+\DoxyCodeLine{17         cin >> choice;}
+\DoxyCodeLine{18         cout << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20         \textcolor{keywordflow}{switch} (choice)}
+\DoxyCodeLine{21         \{}
+\DoxyCodeLine{22         \textcolor{keywordflow}{case} \mbox{\hyperlink{_banking_common_decl_8h_a06fc87d81c62e9abb8790b6e5713c55badf46d4573c019f4cf21bb1a9a1a82ad5}{MAKE}}:}
+\DoxyCodeLine{23             manager.\mbox{\hyperlink{class_account_handler_a8d52fd7d9d898db9da9fceec89f08e94}{MakeAccount}}();}
+\DoxyCodeLine{24             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{25         \textcolor{keywordflow}{case} \mbox{\hyperlink{_banking_common_decl_8h_a06fc87d81c62e9abb8790b6e5713c55bae83605eae5afe45f74243564b695470a}{DEPOSIT}}:}
+\DoxyCodeLine{26             manager.\mbox{\hyperlink{class_account_handler_a6e26960a031ab5177673975482c15165}{DepositMoney}}();}
+\DoxyCodeLine{27             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{28         \textcolor{keywordflow}{case} \mbox{\hyperlink{_banking_common_decl_8h_a06fc87d81c62e9abb8790b6e5713c55bab8f8e6ee31c87744f6a9a484ee1d1219}{WITHRAW}}:}
+\DoxyCodeLine{29             manager.\mbox{\hyperlink{class_account_handler_aad473ca825b506a1c2a5e6f2f89098d7}{WitharwMoney}}();}
+\DoxyCodeLine{30             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{31         \textcolor{keywordflow}{case} \mbox{\hyperlink{_banking_common_decl_8h_a06fc87d81c62e9abb8790b6e5713c55ba053fceeec7c1f04629a06743e0e960eb}{INQUIRE}}:}
+\DoxyCodeLine{32             manager.\mbox{\hyperlink{class_account_handler_a1b3cd6b653ffc8f55df236a0f4878282}{ShowAllInfo}}();}
+\DoxyCodeLine{33             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{34         \textcolor{keywordflow}{case} \mbox{\hyperlink{_banking_common_decl_8h_a06fc87d81c62e9abb8790b6e5713c55ba7a10b5d68d31711288e1fe0fa17dbf4f}{EXIT}}:}
+\DoxyCodeLine{35             \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{36         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{37             cout << \textcolor{stringliteral}{"{}올바르지 않은 입력입니다"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{38             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{39         \}}
+\DoxyCodeLine{40         cout << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{41     \}}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_banking___main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}

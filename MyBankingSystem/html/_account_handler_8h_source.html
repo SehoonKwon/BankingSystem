@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MyBankingSystem: MyBangkingSystem/AccountHandler.h 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MyBankingSystem
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_account_handler_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">AccountHandler.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_account_handler_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_account_8h.html">Account.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_account_array_8h.html">AccountArray.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_account_handler.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_account_handler.html">AccountHandler</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_account_handler.html#a4df6cbdceda310421049ea30c21a2cfe">   13</a></span>&#160;    <a class="code" href="class_bound_check_array.html">BoundCheckArray&lt;Account*&gt;</a> <a class="code" href="class_account_handler.html#a4df6cbdceda310421049ea30c21a2cfe">accArr</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_account_handler.html#af2aa0b788eeec9c03b0981089ada551b">   14</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_account_handler.html#af2aa0b788eeec9c03b0981089ada551b">AccNum</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_account_handler.html#a72b085e0a797c9ddc82f1452e2b97914">AccountHandler</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_account_handler.html#a2b62b0737cf5f63c4a875534012152e5">ShowMenu</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_account_handler.html#a8d52fd7d9d898db9da9fceec89f08e94">MakeAccount</a>(); </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_account_handler.html#a6e26960a031ab5177673975482c15165">DepositMoney</a>(); </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_account_handler.html#aad473ca825b506a1c2a5e6f2f89098d7">WitharwMoney</a>(); </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_account_handler.html#a1b3cd6b653ffc8f55df236a0f4878282">ShowAllInfo</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_account_handler.html#a1126f771f11321902a04f5ac82fa7834">MakeNormalAccount</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_account_handler.html#ad4384a864bfdb13eb413bf6982c07273">MakeCreditAccount</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_account_handler.html#add5dd0640fab0c91dea318604a175855">~AccountHandler</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_account_handler_html_add5dd0640fab0c91dea318604a175855"><div class="ttname"><a href="class_account_handler.html#add5dd0640fab0c91dea318604a175855">AccountHandler::~AccountHandler</a></div><div class="ttdeci">~AccountHandler()</div><div class="ttdef"><b>Definition:</b> <a href="_account_handler_8cpp_source.html#l00007">AccountHandler.cpp:7</a></div></div>
+<div class="ttc" id="aclass_account_handler_html_a6e26960a031ab5177673975482c15165"><div class="ttname"><a href="class_account_handler.html#a6e26960a031ab5177673975482c15165">AccountHandler::DepositMoney</a></div><div class="ttdeci">void DepositMoney()</div><div class="ttdef"><b>Definition:</b> <a href="_account_handler_8cpp_source.html#l00117">AccountHandler.cpp:117</a></div></div>
+<div class="ttc" id="aclass_account_handler_html_a72b085e0a797c9ddc82f1452e2b97914"><div class="ttname"><a href="class_account_handler.html#a72b085e0a797c9ddc82f1452e2b97914">AccountHandler::AccountHandler</a></div><div class="ttdeci">AccountHandler()</div><div class="ttdef"><b>Definition:</b> <a href="_account_handler_8cpp_source.html#l00006">AccountHandler.cpp:6</a></div></div>
+<div class="ttc" id="aclass_account_handler_html"><div class="ttname"><a href="class_account_handler.html">AccountHandler</a></div><div class="ttdoc">인터페이스 조작용 클래스</div><div class="ttdef"><b>Definition:</b> <a href="_account_handler_8h_source.html#l00010">AccountHandler.h:11</a></div></div>
+<div class="ttc" id="aclass_account_handler_html_a8d52fd7d9d898db9da9fceec89f08e94"><div class="ttname"><a href="class_account_handler.html#a8d52fd7d9d898db9da9fceec89f08e94">AccountHandler::MakeAccount</a></div><div class="ttdeci">void MakeAccount()</div><div class="ttdef"><b>Definition:</b> <a href="_account_handler_8cpp_source.html#l00023">AccountHandler.cpp:23</a></div></div>
+<div class="ttc" id="aclass_account_handler_html_a2b62b0737cf5f63c4a875534012152e5"><div class="ttname"><a href="class_account_handler.html#a2b62b0737cf5f63c4a875534012152e5">AccountHandler::ShowMenu</a></div><div class="ttdeci">void ShowMenu() const</div><div class="ttdef"><b>Definition:</b> <a href="_account_handler_8cpp_source.html#l00013">AccountHandler.cpp:13</a></div></div>
+<div class="ttc" id="aclass_account_handler_html_a4df6cbdceda310421049ea30c21a2cfe"><div class="ttname"><a href="class_account_handler.html#a4df6cbdceda310421049ea30c21a2cfe">AccountHandler::accArr</a></div><div class="ttdeci">BoundCheckArray&lt; Account * &gt; accArr</div><div class="ttdef"><b>Definition:</b> <a href="_account_handler_8h_source.html#l00013">AccountHandler.h:13</a></div></div>
+<div class="ttc" id="a_account_array_8h_html"><div class="ttname"><a href="_account_array_8h.html">AccountArray.h</a></div></div>
+<div class="ttc" id="aclass_account_handler_html_a1126f771f11321902a04f5ac82fa7834"><div class="ttname"><a href="class_account_handler.html#a1126f771f11321902a04f5ac82fa7834">AccountHandler::MakeNormalAccount</a></div><div class="ttdeci">void MakeNormalAccount()</div><div class="ttdef"><b>Definition:</b> <a href="_account_handler_8cpp_source.html#l00042">AccountHandler.cpp:42</a></div></div>
+<div class="ttc" id="aclass_account_handler_html_af2aa0b788eeec9c03b0981089ada551b"><div class="ttname"><a href="class_account_handler.html#af2aa0b788eeec9c03b0981089ada551b">AccountHandler::AccNum</a></div><div class="ttdeci">int AccNum</div><div class="ttdef"><b>Definition:</b> <a href="_account_handler_8h_source.html#l00014">AccountHandler.h:14</a></div></div>
+<div class="ttc" id="aclass_account_handler_html_a1b3cd6b653ffc8f55df236a0f4878282"><div class="ttname"><a href="class_account_handler.html#a1b3cd6b653ffc8f55df236a0f4878282">AccountHandler::ShowAllInfo</a></div><div class="ttdeci">void ShowAllInfo() const</div><div class="ttdef"><b>Definition:</b> <a href="_account_handler_8cpp_source.html#l00202">AccountHandler.cpp:202</a></div></div>
+<div class="ttc" id="aclass_account_handler_html_aad473ca825b506a1c2a5e6f2f89098d7"><div class="ttname"><a href="class_account_handler.html#aad473ca825b506a1c2a5e6f2f89098d7">AccountHandler::WitharwMoney</a></div><div class="ttdeci">void WitharwMoney()</div><div class="ttdef"><b>Definition:</b> <a href="_account_handler_8cpp_source.html#l00154">AccountHandler.cpp:154</a></div></div>
+<div class="ttc" id="a_account_8h_html"><div class="ttname"><a href="_account_8h.html">Account.h</a></div></div>
+<div class="ttc" id="aclass_bound_check_array_html"><div class="ttname"><a href="class_bound_check_array.html">BoundCheckArray&lt; Account * &gt;</a></div></div>
+<div class="ttc" id="aclass_account_handler_html_ad4384a864bfdb13eb413bf6982c07273"><div class="ttname"><a href="class_account_handler.html#ad4384a864bfdb13eb413bf6982c07273">AccountHandler::MakeCreditAccount</a></div><div class="ttdeci">void MakeCreditAccount()</div><div class="ttdef"><b>Definition:</b> <a href="_account_handler_8cpp_source.html#l00072">AccountHandler.cpp:72</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_1634527b2c4f1513a7dd9458f4729086.html">MyBangkingSystem</a></li><li class="navelem"><a class="el" href="_account_handler_8h.html">AccountHandler.h</a></li>
+    <li class="footer">다음에 의해 생성됨 :  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

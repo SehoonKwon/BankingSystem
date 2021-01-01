@@ -1,0 +1,229 @@
+\hypertarget{class_bound_check_array}{}\doxysection{Bound\+Check\+Array$<$ T $>$ 클래스 템플릿 참조}
+\label{class_bound_check_array}\index{BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}}
+
+
+계좌 관리를 위한 배열 클래스.  
+
+
+
+
+{\ttfamily \#include $<$Account\+Array.\+h$>$}
+
+
+
+Bound\+Check\+Array$<$ T $>$에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_bound_check_array__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bound_check_array_a74a283a5fb09dcc370d172c619e9d90f}{Bound\+Check\+Array}} (int len=100)
+\item 
+T \& \mbox{\hyperlink{class_bound_check_array_adfbf3bb58d2e4fed40c1016bf853cff1}{operator\mbox{[}$\,$\mbox{]}}} (int idx)
+\item 
+T \mbox{\hyperlink{class_bound_check_array_a73d21228243fe55ad5637ed3f055aed0}{operator\mbox{[}$\,$\mbox{]}}} (int idx) const
+\item 
+int \mbox{\hyperlink{class_bound_check_array_a9810b8c58192e0ce2906567c332b4bbb}{Get\+Arr\+Len}} () const
+\item 
+\mbox{\hyperlink{class_bound_check_array_a4da57867a91df9012b2a189c97c5875a}{$\sim$\+Bound\+Check\+Array}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bound_check_array_a9628933c94a329406b6491bd866255bb}{Bound\+Check\+Array}} (const \mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}} \&\mbox{\hyperlink{class_bound_check_array_ad26b322f23fdf250f1c5696df465f33e}{arr}})
+\item 
+\mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}} \& \mbox{\hyperlink{class_bound_check_array_a0dd6753af1ba0155dbb24294c22347ce}{operator=}} (const \mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}} \&\mbox{\hyperlink{class_bound_check_array_ad26b322f23fdf250f1c5696df465f33e}{arr}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+T $\ast$ \mbox{\hyperlink{class_bound_check_array_ad26b322f23fdf250f1c5696df465f33e}{arr}}
+\item 
+int \mbox{\hyperlink{class_bound_check_array_a5aaebfb3ade041c612fee62b7485b763}{arrlen}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename T$>$\newline
+class Bound\+Check\+Array$<$ T $>$}
+
+계좌 관리를 위한 배열 클래스. 
+
+아래와 같이 함수 템플릿을 헤더와 소스파일로 분리하면 main에서 square 호출 시 실제 Lib.\+h 헤더파일만 참고하므로 템플릿을 기반으로 실제 int형 함수 생성이 필요한데 생성할 구현부 확인이 불가능하여 에러 발생 따라서 .h에 구현부를 넣거나, 구현부를 include 해줘야 한다 
+
+Account\+Array.\+h 파일의 12 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_bound_check_array_a9628933c94a329406b6491bd866255bb}\label{class_bound_check_array_a9628933c94a329406b6491bd866255bb}} 
+\index{BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}!BoundCheckArray@{BoundCheckArray}}
+\index{BoundCheckArray@{BoundCheckArray}!BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BoundCheckArray()}{BoundCheckArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}}$<$ T $>$ \&}]{arr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Account\+Array.\+h 파일의 18 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_bound_check_array_a74a283a5fb09dcc370d172c619e9d90f}\label{class_bound_check_array_a74a283a5fb09dcc370d172c619e9d90f}} 
+\index{BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}!BoundCheckArray@{BoundCheckArray}}
+\index{BoundCheckArray@{BoundCheckArray}!BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BoundCheckArray()}{BoundCheckArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}} (\begin{DoxyParamCaption}\item[{int}]{len = {\ttfamily 100} }\end{DoxyParamCaption})}
+
+
+
+Account\+Array.\+h 파일의 30 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30                                            : \mbox{\hyperlink{class_bound_check_array_a5aaebfb3ade041c612fee62b7485b763}{arrlen}}(len)}
+\DoxyCodeLine{31 \{}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_bound_check_array_ad26b322f23fdf250f1c5696df465f33e}{arr}} = \textcolor{keyword}{new} T[len];}
+\DoxyCodeLine{33 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_bound_check_array_a4da57867a91df9012b2a189c97c5875a}\label{class_bound_check_array_a4da57867a91df9012b2a189c97c5875a}} 
+\index{BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}!````~BoundCheckArray@{$\sim$BoundCheckArray}}
+\index{````~BoundCheckArray@{$\sim$BoundCheckArray}!BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$BoundCheckArray()}{~BoundCheckArray()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}}}
+
+
+
+Account\+Array.\+h 파일의 64 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65 \{}
+\DoxyCodeLine{66     \textcolor{keyword}{delete}[]\mbox{\hyperlink{class_bound_check_array_ad26b322f23fdf250f1c5696df465f33e}{arr}};}
+\DoxyCodeLine{67 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_bound_check_array_a9810b8c58192e0ce2906567c332b4bbb}\label{class_bound_check_array_a9810b8c58192e0ce2906567c332b4bbb}} 
+\index{BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}!GetArrLen@{GetArrLen}}
+\index{GetArrLen@{GetArrLen}!BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetArrLen()}{GetArrLen()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}}$<$ T $>$\+::Get\+Arr\+Len}
+
+
+
+Account\+Array.\+h 파일의 58 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59 \{}
+\DoxyCodeLine{60     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_bound_check_array_a5aaebfb3ade041c612fee62b7485b763}{arrlen}};}
+\DoxyCodeLine{61 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_bound_check_array_a0dd6753af1ba0155dbb24294c22347ce}\label{class_bound_check_array_a0dd6753af1ba0155dbb24294c22347ce}} 
+\index{BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}}\& \mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}}$<$ T $>$ \&}]{arr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Account\+Array.\+h 파일의 19 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_bound_check_array_adfbf3bb58d2e4fed40c1016bf853cff1}\label{class_bound_check_array_adfbf3bb58d2e4fed40c1016bf853cff1}} 
+\index{BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \& \mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})}
+
+
+
+Account\+Array.\+h 파일의 36 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37 \{}
+\DoxyCodeLine{38     \textcolor{keywordflow}{if} (idx < 0 || idx >= \mbox{\hyperlink{class_bound_check_array_a5aaebfb3ade041c612fee62b7485b763}{arrlen}})}
+\DoxyCodeLine{39     \{}
+\DoxyCodeLine{40         cout << \textcolor{stringliteral}{"{}Array index out of bound expetion"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{41         exit(1);}
+\DoxyCodeLine{42     \}}
+\DoxyCodeLine{43     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_bound_check_array_ad26b322f23fdf250f1c5696df465f33e}{arr}}[idx];}
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_bound_check_array_a73d21228243fe55ad5637ed3f055aed0}\label{class_bound_check_array_a73d21228243fe55ad5637ed3f055aed0}} 
+\index{BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption}) const}
+
+
+
+Account\+Array.\+h 파일의 47 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48 \{}
+\DoxyCodeLine{49     \textcolor{keywordflow}{if} (idx < 0 || idx >= \mbox{\hyperlink{class_bound_check_array_a5aaebfb3ade041c612fee62b7485b763}{arrlen}})}
+\DoxyCodeLine{50     \{}
+\DoxyCodeLine{51         cout << \textcolor{stringliteral}{"{}Array index out of bound expetion"{}} << \mbox{\hyperlink{_banking_common_decl_8h_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{52         exit(1);}
+\DoxyCodeLine{53     \}}
+\DoxyCodeLine{54     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_bound_check_array_ad26b322f23fdf250f1c5696df465f33e}{arr}}[idx];}
+\DoxyCodeLine{55 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_bound_check_array_ad26b322f23fdf250f1c5696df465f33e}\label{class_bound_check_array_ad26b322f23fdf250f1c5696df465f33e}} 
+\index{BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}!arr@{arr}}
+\index{arr@{arr}!BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{arr}{arr}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ \mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}}$<$ T $>$\+::arr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Account\+Array.\+h 파일의 16 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_bound_check_array_a5aaebfb3ade041c612fee62b7485b763}\label{class_bound_check_array_a5aaebfb3ade041c612fee62b7485b763}} 
+\index{BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}!arrlen@{arrlen}}
+\index{arrlen@{arrlen}!BoundCheckArray$<$ T $>$@{BoundCheckArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{arrlen}{arrlen}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{class_bound_check_array}{Bound\+Check\+Array}}$<$ T $>$\+::arrlen\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Account\+Array.\+h 파일의 17 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+My\+Bangking\+System/\mbox{\hyperlink{_account_array_8h}{Account\+Array.\+h}}\end{DoxyCompactItemize}
